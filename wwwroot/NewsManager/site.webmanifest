@@ -1,0 +1,15 @@
+{
+    "name": "News Manager",
+    "short_name": "News Manager",
+    "icons": [
+        {
+            "src": "LOGO.png",
+            "sizes": "any",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}

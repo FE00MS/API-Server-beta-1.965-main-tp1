@@ -1,0 +1,103 @@
+
+.NewRow {
+    padding: 8px;
+    padding-bottom: 0px;
+    /* scroll-snap-align: start; */
+}
+
+.NewContainer {
+    display: grid;
+    align-items: start;
+    background-color: #eee;
+    border-radius: 6px;
+}
+
+.NewContainer .cmdIcon {
+    display: none;
+}
+.NewImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NewImage {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+}
+.NewContainer:hover .cmdIcon {
+    display: block;
+}
+.NewCreation{
+    color: rgb(82, 116, 145);
+}
+.NewLayout {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 8px;
+    align-items: start;
+    flex-direction: column;
+}
+#searchBar {
+    width: 100%; 
+    padding:  10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.NewTop {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 8px;
+    align-items: center;
+}
+.New {
+    display: grid;
+    grid-template-columns: 30px auto;
+}
+
+.NewCategory {
+    color: rgb(8, 77, 167) !important;
+}
+
+.NewTitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.NewCommandPanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+.NewTextContainer {
+    position: relative;
+}
+
+
+.NewText {
+    display: block;
+    overflow: hidden;
+    max-height: 3em; 
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    transition: max-height 0.3s ease;
+}
+
+.NewTextContainer.expanded .NewText {
+    max-height: none; 
+
+}
+.toggleTextButton {
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.9em;
+}
