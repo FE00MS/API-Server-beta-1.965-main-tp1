@@ -58,6 +58,8 @@ function doSearch(){
 function showNews() {
     $("#actionTitle").text("Actualités");
     $("#scrollPanel").show();
+    $("#searchKey").show();
+    $('#doSearch').show();
     $('#abort').hide();
     $('#newForm').hide();
     $('#aboutContainer').hide();
@@ -66,6 +68,8 @@ function showNews() {
 }
 function hideNews() {
     $("#scrollPanel").hide();
+    $("#searchKey").hide();
+    $('#doSearch').hide();
     $("#createNew").hide();
     $("#abort").show();
     hold_Periodic_Refresh = true;
@@ -179,10 +183,7 @@ async function renderNews(queryString) {
     removeWaitingGif();
     return endOfData;
 }
-(async () => {
-    let etag = await News_API.HEAD();
-    console.log("Fetched etag:", etag);
-})();
+
 function renderError(message) {
     hideBookmarks();
     $("#actionTitle").text("Erreur du serveur...");
